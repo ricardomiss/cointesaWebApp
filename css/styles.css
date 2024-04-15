@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap');
+:root{
+    --blanco:#ffffff;
+    --rojo:#881014;
+    --oscuro:#0d0d0e;
+    --titulos:'Arima Madurai',cursive;
+    --parrafos:'Mulish', sans-serif;
+}
+.rojo{
+    color: var(--rojo);
+    font-size: 2.1rem;
+    font-family: var(--titulos);
+}
+.negro{
+    background-color: var(--oscuro);
+}
+.blanco{
+    color: var(--blanco);
+    font-family: var(--parrafos);
+}
+.titulo{
+    font-family: var(--titulos);
+}
+.parrafo{
+    font-family: var(--parrafos);
+}
