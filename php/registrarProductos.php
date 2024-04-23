@@ -12,13 +12,15 @@ $modelo = $_POST['modelo'];
 $garantia = $_POST['garantia'];
 $upc = $_POST['upc'];
 $detalles = $_POST['detalles'];
-$imagen= addslashes(file_get_contents($_FILES['imagen']['tmp_name']));
+if(isset($_FILES['imagen'])){
+	$imagen= addslashes(file_get_contents($_FILES['imagen']['tmp_name']));
+}
 $etiqueta = $_POST['label'];
 
 if($id != null || $id != ''){
-	$query = "UPDATE productos SET nombre='$nombre',precio='$precio',disponible='$disponible' WHERE id='$id'";
+	$query = "UPDATE productos SET nombre='$nombre',precio='$precio',disponible='$disponible' WHERE id_producto='$id'";
 	$conexion->query($query);
-	$secquery = "UPDATE productos_detalles SET descripcion='$descripcion',id_marca='$id_marca',modelo='$modelo',garantia='$garantia',upc='$upc',detalles='$detalles' WHERE id_producto='$id'";
+	$secquery = "UPDATE productos_detalles SET descripcion='$descripcion',id_marca='$id_marca',modelo='$modelo',garantia='$garantia',upc='$upc',detalles='$detalles',label='$etiqueta' WHERE id_producto='$id'";
 	$conexion->query($secquery);
 	header("Location: ../system/equipos.php");
 }else{

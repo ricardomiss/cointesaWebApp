@@ -45,7 +45,7 @@ include './shared/layout.php';
                                 }
                                 ?>
                                 <td class="">
-                                    <a href="./archivo.php?id=<?php echo $row['id_servicios'] ?>" class="btn btn-info btn-sm">Editar</a>
+                                    <a href="./getServicios.php?id=<?php echo $row['id_servicios'] ?>" class="btn btn-info btn-sm">Editar</a>
                                     <a href="../php/disponibleEquipos.php?id=<?php echo $row['id_servicios'] ?>&disponible=<?php echo $row['disponible'] ?>&equipo=0" class="btn <?php echo $row['disponible'] == 1 ? "btn-success" : "btn-secondary"; ?> btn-sm"><?php echo $row['disponible'] == 1 ? "Ocultar" : "Mostrar"; ?></a>
                                 </td>
                             </tr>
@@ -80,7 +80,7 @@ include './shared/layout.php';
                                 }
                                 ?>
                                 <td class="">
-                                    <a href="./archivo.php?id=<?php echo $row['id_producto'] ?>" class="btn btn-info btn-sm">Editar</a>
+                                    <a href="./getEquipo.php?id=<?php echo $row['id_producto'] ?>" class="btn btn-info btn-sm">Editar</a>
                                     <a href="../php/disponibleEquipos.php?id=<?php echo $row['id_producto'] ?>&disponible=<?php echo $row['disponible'] ?>&equipo=1" class="btn <?php echo $row['disponible'] == 1 ? "btn-success" : "btn-secondary"; ?> btn-sm"><?php echo $row['disponible'] == 1 ? "Ocultar" : "Mostrar"; ?></a>
                                 </td>
                             </tr>
