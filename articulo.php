@@ -44,7 +44,7 @@ $row = mysqli_fetch_array($datos)
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" id="principal">
         <div class="container mb-3 mt-3">
             <a href="conocenos.php" class="btn btn-primary">Atrás</a>
             <?php
@@ -54,8 +54,8 @@ $row = mysqli_fetch_array($datos)
                     ?>
             <h2 class="titulo mt-4"><?php echo $row[1] ?></h2>
         </div>
-        <div class="d-flex justify-content-center">
-            <img src="data:image/jpeg;base64,<?php echo base64_encode($row[4]) ?>" alt="articuloimage" width="1080" height="500"> 
+        <div class="d-flex justify-content-center" id="portada">
+            <img src="data:image/jpeg;base64,<?php echo base64_encode($row[4]) ?>" alt="articuloimage"> 
         </div>
         <div class="mt-5">
             <div class="d-flex justify-content-between">
@@ -66,7 +66,7 @@ $row = mysqli_fetch_array($datos)
                     <p>Fecha: <?php echo $fecha_formateada = date('d/m/Y h:i A', strtotime($row[2]))?></p>
                 </div>
             </div>
-            <div class="container mb-5   mt-3">
+            <div class="container mb-5 mt-3 test-center">
                 <?php echo $row[3]?>
             </div>
         </div>

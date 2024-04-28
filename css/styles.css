@@ -24,3 +24,54 @@
 .parrafo{
     font-family: var(--parrafos);
 }
+#principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#portada {
+    height: 50%;
+    width: 50%;
+    position: relative;
+    flex: none;
+}
+
+#portada img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+.test-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+figure {
+    height: 50%;
+    width: 50%;
+    position: relative;
+    flex: none;
+}
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+.nav-pills .nav-link {
+    color: #ff0000; /* Color para los enlaces */
+}
+
+.nav-pills .nav-link:hover {
+    color: #cc0000; /* Color para los enlaces al pasar el mouse */
+}
+.nav-pills{
+    --bs-nav-pills-link-active-bg: #881014 !important;
+}

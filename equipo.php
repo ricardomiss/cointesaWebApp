@@ -39,29 +39,41 @@ include 'php/conexionBD.php';
             </div>
         </div>
     </nav>
-
     
     <div class="container mb-3 mt-3">
-        <h1 class="titulo">Equipos y Servicios</h1>
-
-        
+        <h1 class="titulo">Equipos y Servicios</h1>        
         <div class="row">
             <div class="col">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-todo-tab" data-bs-toggle="pill" data-bs-target="#pills-todo" type="button" role="tab" aria-controls="pills-todo" aria-selected="true">Todo</button>
+                        <button class="nav-link active" id="pills-todo-tab" data-bs-toggle="pill" data-bs-target="#pills-todo" type="button" role="tab" aria-controls="pills-todo" aria-selected="true">
+                            <img src="assets/img/todo.png" alt="todo" style="width: 30%;">
+                            Todo
+                        </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-computadoras-tab" data-bs-toggle="pill" data-bs-target="#pills-computadoras" type="button" role="tab" aria-controls="pills-computadoras" aria-selected="false">Computadoras</button>
+                        <button class="nav-link" id="pills-computadoras-tab" data-bs-toggle="pill" data-bs-target="#pills-computadoras" type="button" role="tab" aria-controls="pills-computadoras" aria-selected="false">
+                            <img src="assets/img/computadora.png" alt="Computadoras" style="width: 30%;">
+                            Computadoras
+                        </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-memorias-tab" data-bs-toggle="pill" data-bs-target="#pills-memorias" type="button" role="tab" aria-controls="pills-memorias" aria-selected="false">Memorias</button>
+                        <button class="nav-link" id="pills-memorias-tab" data-bs-toggle="pill" data-bs-target="#pills-memorias" type="button" role="tab" aria-controls="pills-memorias" aria-selected="false">
+                            <img src="assets/img/memoria.png" alt="Memorias" style="width: 30%;">
+                            Memorias
+                        </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-impresoras-tab" data-bs-toggle="pill" data-bs-target="#pills-impresoras" type="button" role="tab" aria-controls="pills-impresoras" aria-selected="false">Impresoras</button>
+                        <button class="nav-link" id="pills-impresoras-tab" data-bs-toggle="pill" data-bs-target="#pills-impresoras" type="button" role="tab" aria-controls="pills-impresoras" aria-selected="false">
+                            <img src="assets/img/impresora.png" alt="Impresoras" style="width: 30%;">
+                            Impresoras
+                        </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-servicios-tab" data-bs-toggle="pill" data-bs-target="#pills-servicios" type="button" role="tab" aria-controls="pills-servicios" aria-selected="false">Servicios</button>
+                        <button class="nav-link" id="pills-servicios-tab" data-bs-toggle="pill" data-bs-target="#pills-servicios" type="button" role="tab" aria-controls="pills-servicios" aria-selected="false">
+                            <img src="assets/img/servicio.png" alt="Servicios" style="width: 30%;">
+                            Servicios
+                        </button>
                     </li>
                 </ul>
                 

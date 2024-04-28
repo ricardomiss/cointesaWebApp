@@ -39,29 +39,40 @@
 
     
     <div class="container mb-3 mt-3">
-        <h1>Contactanos</h1>
+        <div class="col-8 text-center">
+            <img src="assets/img/contactanos.png" width="500"></img>
+        </div>
+        <p>¿Tienes alguna duda o comentario?</p>
         <p>Envíanos un mensaje y nos pondremos en contacto contigo lo antes posible.</p>
         <div class="pt-3">
             <form method="POST" action="php/registrarComentario.php">
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
-                </div>
-                <div class="mb-3">
-                    <label for="telefono" class="form-label">Telefono</label>
-                    <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Ingresa tu Telefono">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="correo" placeholder="Ingresa tu email">
-                </div>
-                <div class="mb-3">
-                    <label for="asunto" class="form-label">Asunto</label>
-                    <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto">
-                </div>
-                <div class="mb-3">
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" rows="5" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Telefono</label>
+                            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Ingresa tu Telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="correo" placeholder="Ingresa tu email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="5" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <img src="assets/img/compu.png"></img>
+                    </div>
+                    
                 </div>
                 <button type="submit" class="btn btn-primary mb-4">Enviar</button>
             </form>

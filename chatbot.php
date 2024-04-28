@@ -33,7 +33,8 @@
     background-color: #0df053;
     border-radius: 50%;
     overflow: hidden; /* Añade esta propiedad para asegurarte de que el logotipo de WhatsApp no se salga del contenedor */
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);.
+    z-index: 9999;
   }
 
   .boton {
