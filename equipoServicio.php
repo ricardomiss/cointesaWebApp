@@ -53,7 +53,7 @@ if($isServicio == 1){
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" id="principal">
         <div class="container mb-3 mt-3">
             <a href="equipo.php" class="btn btn-primary">Atrás</a>
             <?php
@@ -63,7 +63,7 @@ if($isServicio == 1){
                     ?>
             <h2 class="titulo mt-4"><?php echo $row[1] ?></h2>
         </div>
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center" id="portada">
             <?php
             if($isServicio == 1){
                 $src = "https://appliedsurveys.com/wp-content/uploads/2015/02/default.png";
@@ -74,28 +74,7 @@ if($isServicio == 1){
             <img src="<?php echo $src?>" alt="articuloimage" width="1080" height="500"> 
         </div>
         <div class="mt-5">
-            <div class="d-flex justify-content-between">
-                <div class="justify-content-start">
-                    <?php
-                    if($isServicio == 1){
-                        echo '<p>Autor: '.$row[7].'</p>';
-                    }else{
-                        echo '<p>Autor: '.$row[5].'</p>';
-                    }
-                    ?>
-                </div>       
-                <div class="justify-content-end">
-                    <?php
-                    if($isServicio == 1){
-                        $fecha_formateada = date('d/m/Y h:i A', strtotime($row[8]));
-                    }else{
-                        $fecha_formateada = date('d/m/Y h:i A', strtotime($row[4]));
-                    }
-                    ?>
-                    <p>Fecha: <?php echo $fecha_formateada?></p>
-                </div>
-            </div>
-            <div class="container mb-5   mt-3">
+            <div class="container mb-5 mt-3 test-center">
                 <div>
                     <strong>Descripción:</strong>
                     <?php if($isServicio == 1){
